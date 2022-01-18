@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mission</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <form class="form01" method="post">
+        <input class="input01" type="text" name="keyword">
+    </form>
+    <button class="search">검색하기</button>
+    <h2>검색 결과는?</h2>
+    <div class="result"></div>
+
+    
+    <script>
+        document.querySelector(".search").addEventListener('click', function(){
+            var inputdata = document.forms[0].elements[0].value;
+            Ajax_req("http://localhost:3000/mission", inputdata);
+
+        });
+        function Ajax_req(url, data){
+            var datas = {
+                "keyword": data
+            };
+            datas = JSON.stringify(datas);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send(datas);
+            xhr.addEventListener('load', function() {
+                console.log("성공");
+                var result =JSON.parse(xhr.responseText);
+                document.querySelector(".result").innerHTML += result.answer + "<br>";
+            });
+        };
+
+    </script>
+</body>
+
+</html>

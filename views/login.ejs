@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .form01 {
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #000;
+            width: 400px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/email/form" method="post" class="form01">
+        email : <input type="text" name="email"><br>
+        password : <input type="password" name="password"><br>
+
+    <button class="ajaxsend">login</button>
+    </form>
+    <div class="result"></div>
+
+    <script>
+        document.querySelector('.ajaxsend').addEventListener('click', function () {
+            var email = document.getElementsByName('email')[0].value;
+            var password = document.getElementsByName('password')[0].value;
+            console.log(email,password);
+            sendAjax('http://localhost:3000/login', {
+                'email': email,
+                'password': password
+            });
+        });
+
+        function sendAjax(url, data) {
+            console.log(data);
+            data = JSON.stringify(data);
+            console.log(data);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
+            xhr.setRequestHeader('Content-Type', 'application/json')
+            xhr.send(data);
+            console.log("여까지옴");
+
+            xhr.addEventListener('load', function () {
+                var result = JSON.parse(xhr.responseText);
+                var resultDiv = document.querySelector('.result');
+                if (result.email)window.location.href="/main";
+                else resultDiv.innerHTML = result;
+            });
+        }
+    </script>
+
+</html>
