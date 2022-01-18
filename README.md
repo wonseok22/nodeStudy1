@@ -5,8 +5,19 @@ Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보
 
 # Features
 
-- 기능 :
-    - NPM과 웹 프레임워크인 express.js 기반 웹 서버 구현
+- 기능 : NPM과express.js 기반 웹 서버 구현
+
+    - 세부사항 :
+        - express의 GET, POST 요청처리
+        - View engine을 활용한 라우팅 처리
+        - JSON을 활용한 Ajax처리
+        - MySQL Database 연동을 통한 회원 데이터베이스 구현
+        - Routing 모듈화를 위한 리팩토링
+        - Passport를 사용한 사용자 인증 구현
+        - middleware의 localStrategy 사용 구현
+        - Ajax 기반의 passport 인증환경 구현
+        - 세션만료를 통한 로그아웃처리
+        - RESTful API의 GET,POST,PUT,DELETE 사용
 
 # Version
 - version : 1.0.0
