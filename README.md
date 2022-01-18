@@ -1,6 +1,12 @@
-# nodeStudy1
-Node.js를 공부하여 구현한 로그인 및 세션유지, 로그아웃, 회원가입 시스템입니다.
 
+# Description
+
+Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보는 백엔드 자바스크립트의 이해(https://www.inflearn.com/course/node-js-%EC%9B%B9%EA%B0%9C%EB%B0%9C)를 보고 공부한 내용입니다.
+
+# Features
+
+- 기능 :
+    - NPM과 웹 프레임워크인 express.js 기반 웹 서버 구현
 
 # Version
 - version : 1.0.0
