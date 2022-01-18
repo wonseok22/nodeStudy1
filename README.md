@@ -1,7 +1,7 @@
 
 # Description
 
-Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보는 백엔드 자바스크립트의 이해(https://www.inflearn.com/course/node-js-%EC%9B%B9%EA%B0%9C%EB%B0%9C)를 보고 공부한 내용입니다.
+Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보는 백엔드 자바스크립트의 이해(https://www.inflearn.com/course/node-js-%EC%9B%B9%EA%B0%9C%EB%B0%9C) 를 보고 공부한 내용입니다.
 
 # Features
 
