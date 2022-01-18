@@ -19,6 +19,11 @@ Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보
         - 세션만료를 통한 로그아웃처리
         - RESTful API의 GET,POST,PUT,DELETE 사용
 
+# Keywords
+
+- express : 
+- REST, REST API : https://recordofwonseok.tistory.com/28
+
 # Version
 - version : 1.0.0
 - license : ISC
