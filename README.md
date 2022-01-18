@@ -5,7 +5,7 @@ Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보
 
 # Features
 
-- 기능 : NPM과express.js 기반 웹 서버 구현
+- 기능 : NPM과 express.js 기반 웹 서버 구현
 
     - 세부사항 :
         - express의 GET, POST 요청처리
@@ -25,7 +25,7 @@ Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보
 - REST, REST API : https://recordofwonseok.tistory.com/28
 
 # Version
-- version : 1.0.0
+   
 - license : ISC
 - dependencies
     - "body-parser" : "1.19.1"
@@ -39,4 +39,5 @@ Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보
     - "express-session" : "1.17.2",
     - "passport" : "0.5.2",
     - "passport-local" : "1.0.0"
-
+    - 
+- MySQL server : "8.0.27"
