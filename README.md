@@ -45,4 +45,5 @@ Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보
 # References
 
 - MDN webdocs : https://developer.mozilla.org/ko/docs/Web/JavaScript
-- passportdocs : https://www.passportjs.org/
+- passport : https://www.passportjs.org/
+- express.js : https://expressjs.com/ko/
