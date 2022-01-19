@@ -41,3 +41,8 @@ Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보
     - "passport-local" : "1.0.0"
     - 
 - MySQL server : "8.0.27"
+
+# References
+
+- MDN webdocs : https://developer.mozilla.org/ko/docs/Web/JavaScript
+- passportdocs : https://www.passportjs.org/
