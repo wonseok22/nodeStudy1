@@ -23,7 +23,7 @@ Node.js를 학습하기 위해 inflearn 강의인 Node.js 웹개발로 알아보
 
 - express : https://recordofwonseok.tistory.com/45?category=1000043
 - REST, REST API : https://recordofwonseok.tistory.com/28
-
+- ejs : https://recordofwonseok.tistory.com/46?category=1000043
 # Version
    
 - license : ISC
