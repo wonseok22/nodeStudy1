@@ -6,6 +6,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var session = require('express-session');
 var flash = require('connect-flash');
+
 const cors = require('cors');
 
 app.listen(3000, function() {
@@ -23,6 +24,7 @@ app.use(session({
     resave : false,
     saveUninitialized: true
 }));
+
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
