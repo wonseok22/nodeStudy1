@@ -10,15 +10,116 @@
             color: #963b3b;
             margin-bottom: 16px;
         }
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        #header h1 {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px dashed #2e2e2e;
+        }
+
+        body {
+        background-image: #34495e;
+        }
+
+        .loginForm {
+        position:absolute;
+        width: 500px;
+        height:400px;
+        padding: 50px, 30px;
+        background-color:#FFFFFF;
+        text-align:center;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        border: 1px solid #000;
+        }
+
+        .loginForm h2{
+        text-align: center;
+        margin: 30px;
+        }
+
+        .idForm{
+        border-bottom: 2px solid #adadad;
+        margin: 30px;
+        padding: 10px 10px;
+        }
+
+        .passForm{
+        border-bottom: 2px solid #adadad;
+        margin: 30px;
+        padding: 10px 10px;
+        }
+
+        .id {
+        width: 100%;
+        border:none;
+        outline:none;
+        color: #636e72;
+        font-size:16px;
+        height:25px;
+        background: none;
+        }
+
+        .pw {
+        width: 100%;
+        border:none;
+        outline:none;
+        color: #636e72;
+        font-size:16px;
+        height:25px;
+        background: none;
+        }
+
+        .btn {
+        position:relative;
+        left:35%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+        width:70%;
+        height:40px;
+        background: #34395e;
+        background-position: left;
+        background-size: 200%;
+        color:white;
+        font-weight: bold;
+        border:none;
+        border-radius: 10px;
+        cursor:pointer;
+        transition: 0.4s;
+        display:inline;
+        }
+
+        .btn:hover {
+        background-position: right;
+        }
+
+        .bottomText {
+        margin: 20px 30px 30px 30px;
+        text-align: left;
+        }
     </style>
 </head>
 <body>
-    <h1>Join my Website!</h1>
-    <section class="messages"><%= message %></section>
-    <form action="/join" method="post">
-        email : <input type="text" name="email"><br>
-        password : <input type="text" name="password"><br>
-        <input type="submit">
+    <!-- header -->
+    <header id="header">
+        <h1>중간 실습 과제 2 : 회원가입 페이지</h1>
+    </header>
+    <!-- //header -->
+    <form action="/mission/join" method="post" class="loginForm">
+        <h2>회원가입</h2>
+        <div class="idForm">
+            <input type="text" id="sid" class="id" name="user_id" placeholder="ID"/><br />
+        </div>
+        <div class="passForm">
+            <input type="password"  id="pw" class = "pw" name="user_pw" placeholder="PW"/><br />
+        </div>
+        <input type="submit" class="btn">
     </form>
 </body>
 </html>
